@@ -30,12 +30,6 @@ task("deploy", "Deploy the smart contracts", async(taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.4",
   networks: {
-    // mumbai: {
-    //   // url: "https://matic-testnet-archive-rpc.bwarelabs.com",
-    //   url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.PRIVATE_KEY}`,
-    //   accounts: [process.env.PRIVATE_ACCOUNT_KEY]
-    //   // accounts: [process.env.PRIVATE_KEY]
-    // },
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: [process.env.PRIVATE_ACCOUNT_KEY]
